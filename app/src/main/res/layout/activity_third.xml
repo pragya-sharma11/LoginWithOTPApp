@@ -6,4 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Third">
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="187dp"
+        android:layout_height="98dp"
+        android:text="Logout"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#E91E63"
+        android:background="#E91E63"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
