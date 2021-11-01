@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText e;
     Button b;
     CountryCodePicker ccp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,17 +27,9 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(e.getText().toString().isEmpty()){
-                    e.setError("Please fill phone number");
-                }
-                else if(e.getText().toString().length()!=6){
-                    e.setError("OTP not valid");
-                }
-                else{
-                    Intent i = new Intent(MainActivity.this, Second.class);
-                    i.putExtra("phone", e.getText());
-                    startActivity(i);
-                }
+                Intent i = new Intent(MainActivity.this, Second.class);
+                i.putExtra("phone", e.getText());
+                startActivity(i);
             }
         });
     }
