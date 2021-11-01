@@ -9,9 +9,7 @@ import android.widget.EditText;
 import com.hbb20.CountryCodePicker;
 
 public class Third extends AppCompatActivity {
-    EditText e;
-    Button b;
-    CountryCodePicker ccp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

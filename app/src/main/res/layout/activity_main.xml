@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <com.hbb20.CountryCodePicker
-
+        android:id="@+id/ccp"
         android:layout_width="169dp"
         android:layout_height="63dp"
         android:gravity="center_horizontal"
