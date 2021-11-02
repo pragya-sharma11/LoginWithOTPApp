@@ -28,8 +28,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, Second.class);
-                i.putExtra("phone", e.getText());
+                i.putExtra("phone",ccp.getFullNumberWithPlus().trim());
                 startActivity(i);
+                //finish();
             }
         });
     }

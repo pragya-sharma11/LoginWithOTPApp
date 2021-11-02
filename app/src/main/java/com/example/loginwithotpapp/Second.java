@@ -29,10 +29,11 @@ public class Second extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+        mobile = getIntent().getStringExtra("phone").toString();
         b = findViewById(R.id.button2);
         e = findViewById(R.id.editText2);
         f = FirebaseAuth.getInstance();
-        mobile = getIntent().getStringExtra("phone").toString();
+
         genOTP();
         b.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -44,7 +44,6 @@
         android:text="Sign in "
         android:textColor="@color/white"
         android:textSize="30dp"
-
         android:textStyle="bold"
         app:backgroundTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="parent"
